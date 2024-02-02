@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="https://cdn.glitch.global/9e441e02-033e-4da3-828a-4bb469037c94/%C2%A7%20(1).png?v=1706639756232">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Copyfy</title>
+</head>
+<body>
+  <div id="header"><h1>Copyfy</h1><button id="toggleSideButton" onclick="toggleSide()">☰</button></div>
+  <br><br><br><br><br>
+  
+  <div id="scrollBar">
+      <div id="scrollIndicator">
+    </div>
+  </div>
+  <div id="side">
+    
+        <a href="#Combo" onclick="toggleSide()"><button><h3>Combo</h3></button></a>
+        <a href="#Linie" onclick="toggleSide()"><button><h3>Linie</h3></button></a>
+        <a href="#Strzałki" onclick="toggleSide()"><button><h3>Strzałki</h3></button></a>
+        <a href="#Kwadraty" onclick="toggleSide()"><button><h3>Kwadraty</h3></button></a>
+        <a href="#Trójkąty" onclick="toggleSide()"><button><h3>Trójkąty</h3></button></a>
+        <a href="#Koła" onclick="toggleSide()"><button><h3>Koła</h3></button></a>
+        <a href="#Drogowe" onclick="toggleSide()"><button><h3>Drogowe</h3></button></a>
+        <a href="#Odwarzanie" onclick="toggleSide()"><button><h3>Odtwarzanie</h3></button></a>
+        <a href="#Kostki" onclick="toggleSide()"><button><h3>Kostki</h3></button></a>
+        <a href="#Menu" onclick="toggleSide()"><button><h3>Menu</h3></button></a>
+        <a href="#Przedmioty" onclick="toggleSide()"><button><h3>Przedmioty</h3></button></a>
+        <a href="#Matematyczne" onclick="toggleSide()"><button><h3>Matematyczne</h3></button></a>
+        <a href="#Nawiasy" onclick="toggleSide()"><button><h3>Nawiasy</h3></button></a>
+        <a href="#Twarze" onclick="toggleSide()"><button><h3>Twarze</h3></button></a>
+        <a href="#Gwiazdy" onclick="toggleSide()"><button><h3>Gwiazdy</h3></button></a>
+        <a href="#Braille" onclick="toggleSide()"><button><h3>Braille</h3></button></a>
+        <a href="#Indeks-Górny" onclick="toggleSide()"><button><h3>Indeks Górny</h3></button></a>
+        <a href="#Indeks-Dolny" onclick="toggleSide()"><button><h3>Indeks Dolny</h3></button></a>
+        <a href="#Jednostki" onclick="toggleSide()"><button><h3>Jednostki</h3></button></a><br><br><br><br>
+  </div>
+  
+  <center><div id="charactersGrid"></div></center>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const categories = [
+        { name: 'Combo', characters: ['✎﹏﹏﹏﹏﹏','✄┈┈┈┈┈┈┈┈┈','( ͡° ͜ʖ ͡°)','¯\\_(ツ)_/¯','ヽ༼ຈل͜ຈ༽ﾉ','ಠ_ಠ','ᕕ( ᐛ )ᕗ','▶ ılıılılılılılıılılı 00:38','▶ 🔘────── 00:38','ʚїɞ','𓆝 ̃˷','[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]','ᶘᵒᴥᵒᶅ','༼ ºلº ༽','^오^','ʕ•ᴥ•ʔ',' ´• ل •`','(´_ゝ`)'] },
+        { name: 'Linie', characters: ['─', '━', '│', '┃', '┄', '┅', '┆', '┇', '┈', '┉', '┊', '┋', '═', '║', '╒', '╓', '╔', '╕', '╖', '╗', '╘', '╙', '╚', '╛', '╜', '╝', '╞', '╟', '╠', '╡', '╢', '╣', '╤', '╥', '╦', '╧', '╨', '╩', '╪', '╫', '╬', '╭', '╮', '╯', '╰', '╱', '╲', '╳', '╴', '╵', '╶', '╷', '╸', '╹', '╺', '╻', '╼', '╽', '╾', '╿'] },
+        { name: 'Strzałki', characters: ['►', '◄', '↕', '↨', '↑', '↓', '→', '←', '↔', '▲', '▼', '⮕', '⬈', '⬉', '⬊', '⬋', '⬌', '⬍', '⭠', '⭡', '⭢', '⭣', '⭤', '⭥', '⮂', '⮃', '⮐', '⮑', '⬎', '⬏', '⬐', '⬑', '⬱', '⬳', '⬸', '⬿', '⭅', '⭆', '↕', '↖', '↗', '↘', '↙', '↚', '↛', '↜', '↝', '↞', '↟', '↠', '↡', '↢', '↣', '↤', '↥', '↦', '↧', '↨', '↫', '↬', '↭', '↮', '↯', '↰', '↱', '↲', '↳', '↴', '↶', '↷', '↸', '↹', '↺', '↻', '⟲', '⟳', '↼', '↽', '↾', '↿', '⇀', '⇁', '⇂', '⇃', '⇄', '⇅', '⇆', '⇇', '⇈', '⇉', '⇊', '⇋', '⇌', '⇍', '⇎', '⇏', '⇕', '⇖', '⇗', '⇘', '⇙', '⇚', '⇛', '⇜', '⇝', '⇞', '⇟', '⇠', '⇡', '⇢', '⇣', '⇤', '⇥', '⇦', '⇧', '⇨', '⇩', '⇪', '⌅', '⌆', '⌤', '⏎', '☇', '☈', '➔', '➘', '➙', '➚', '➛', '➜', '➝', '➞', '➟', '➠', '➢', '➣', '➤', '➥', '➦', '➧', '➨', '➩', '➪', '➫', '➬', '➭', '➮', '➯', '➱', '➲', '➳', '➴', '➵', '➶', '➷', '➸', '➹', '➺', '➻', '➼', '➽', '➾', '↵', '↓', '↔', '←', '→', '↑', '⍇', '⍈', '⍐', '⍗', '⇫', '⇬', '⇭', '⇮', '⇯', '⇰', '⇱', '⇲', '⇳', '⇴', '⇵', '⇶', '⇷', '⇸', '⇹', '⇺', '⇻', '⇼', '⇽', '⇾', '⇿', '⇐', '⇑', '⇒', '⇓', '⇔', '𖣫', '𖤂', '⬀', '⬁', '⬂', '⬃', '⬄'] },
+        { name: 'Kwadraty', characters: ['∎', '⊞', '⊟', '⊠', '⊡', '▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '░', '▒', '▓', '▔', '■', '□', '▢', '▣', '▤', '▥', '▦', '▧', '▨', '▩', '▪', '▫', '▬', '▭', '▮', '▯', '◘', '◙', '◚', '◛', '◧', '◨', '◩', '◪', '◫', '❏', '❐', '❑', '❒', '❘', '❙', '❚', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟', '◰', '◱', '◲', '◳', '𖣯', '⿴', '⿻','█','▀','▄▌','▐','▗','▘','▙','▚','▛','▜','▝','▞','▟','▖','░','▒','▓','◼','⬛','⬜'] },
+        { name: 'Trójkąty', characters: ['⊿', '▲', '△', '▴', '▵', '▷', '▸', '▹', '►', '▻', '▼', '▽', '▾', '▿', '◁', '◂', '◃', '◄', '◅', '◢', '◣', '◤', '◥', '◬', '◭', '◮', '◸', '◹', '◺', '◿', '∇', '∆', '𓇮'] },
+        { name: 'Koła', characters: ['⊖', '⊘', '⊙', '⊚', '⊛', '⊜', '⊝', '◉', '○', '◌', '◍', '◎', '●', '◐', '◑', '◒', '◓', '◔', '◕', '◖', '◗', '◦', '◯', '◴', '◵', '◶', '◷', '❍', 'ₒ', '॰', '°', '৹', '๐', 'º', '𐤏', 'Ｏ', '⦿', '⊕', '⊗', '⨷', '🅞', 'Ⓞ', 'ⓞ', '𖣠', '𖣐', '᪤', '𖥕', '𖥞', '𖦹', '𖥚', '𖤞', '𒊹', '•', '·', '∙', '⊙', '⊚', '⊛', '◉', '○', '◌', '◍', '◎', '●', '◘', '◦', '。', '☉', '⦾', '⦿', '𓏬', '𓃑', '𓏧', '⸬','⛬','⛭','⚬','⚭','⚮','⚯']},
+        { name: 'Drogowe', characters: ['⛐', '⛍', '⛕', '⛖', '⛗', '⛘', '⛙', '⛜', '⛠', '⛚', '⛛', '⛞', '⛡', '♲', '♻','♼','♽','🅿︎','⚠︎','☄︎','❄︎','⚕︎','☣︎','♨︎','⛴︎'] },
+        { name: 'Odtwarzanie', characters: ['▶︎','◀︎','⏹︎','⏺︎','⏏︎','⏹︎','⏸︎','⏮︎','⏭︎','⏯︎']},
+        { name: 'Kostki', characters: ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅', '🎲'] },
+        { name: 'Menu', characters: ['☰', '≡', 'Ξ', '㊂', '≣', '⁝', '⋮', '︙', '⦙', '⁞', '⋯', '…', '∷', '▲', '▼', '▶', '△', '▽', '▷', '⌃', '⌄', '︿', '﹀', '︽', '︾', '⌵', '𓏬', '𓃑', '𓏧', '⸬', '⛶'] },
+        { name: 'Przedmioty', characters: ['⛏︎','✂︎','⚒︎','⚔︎','⚖︎','⛓︎','☂︎','⛱︎','✒︎','✏︎','⌨︎','☎︎','⛸︎','✉︎','⚱︎', '₿']},
+        { name: 'Matematyczne', characters: ['½', '⅓', '⅔', '¼', '¾', '⅕', '⅖', '⅗', '⅘', '⅙', '⅚', '⅐', '⅛', '⅜', '⅝', '⅞', '⅑', '⅒', '↉', '⅟', '𝝅', 'Ⅰ', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ', 'Ⅵ', 'Ⅶ', 'Ⅷ', 'Ⅸ', 'Ⅹ', 'Ⅺ', 'Ⅻ', 'ⅰ', 'ⅱ', 'ⅲ', 'ⅳ', 'ⅴ', 'ⅵ', 'ⅶ', 'ⅷ', 'ⅸ', 'ⅹ', 'ⅺ', 'ⅻ', '①', '②', '③', '④', '⑤', '⑥', '⑦', '⑧', '⑨', '⑩', '⓪', '①', '②', '③', '④', '⑤', '⑥', '⑦', '⑧', '⑨', '⑩', '⓵', '⓶', '⓷', '⓸', '⓹', '⓺', '⓻', '⓼', '⓽', '⓾', '➀', '➁', '➂', '➃', '➄', '➅', '➆', '➇', '➈', '➉', '➊', '➋', '➌', '➍', '➎', '➏', '➐', '➑', '➒', '➓', '⑴', '⑵', '⑶', '⑷', '⑸', '⑹', '⑺', '⑻', '⑼', '⑽', '⑾', '⑿', '❶', '❷', '❸', '❹', '❺', '❻', '❼', '❽', '❾', '❿', '㈠', '㈡', '㈢', '㈣', '㈤', '㈥', '㈦', '㈧', '㈨', '㈩', '㊀', '㊁', '㊂', '㊃', '㊄', '㊅', '㊆', '㊇', '㊈', '㊉', '０', '１', '２', '３', '４', '５', '６', '７', '８', '９', '𝟬', '𝟭', '𝟮', '𝟯', '𝟰', '𝟱', '𝟲', '𝟳', '𝟴', '𝟵'] },
+        { name: 'Nawiasy', characters: ['〈', '〉', '《', '》', '「', '」', '『', '』', '【', '】', '〔', '〕', '︵', '︶', '︷', '︸', '︹', '︺', '︻', '︼', '︽', '︾', '︿', '﹀', '﹁', '﹂', '﹃', '﹄', '﹙', '﹚', '﹛', '﹜', '﹝', '﹞', '﹤', '﹥', '（', '）', '＜', '＞', '｛', '｝', '❬', '❭', '❮', '❯', '❰', '❱', '〖', '〗', '〘', '〙', '〚', '〛', '⟨', '⟩', '‹', '›', '«', '»', '｢', '｣', '⌃', '⌄', '⌵', '⌢', '⌣', '⎴', '⏜', '⏝', '⏞', '⏟', '⏠', '⏡'] },
+        { name: 'Twarze', characters: ['☹', '☺', '☻', '〠', 'ヅ', 'ツ', '㋡', '쓰', 'ü', 'ت', '⍢', '⍨', 'ᴗ̈', '⚇', '⚉'] },
+        { name: 'Gwiazdy', characters: ['★', '☆', '✡', '✦', '✧', '⌑', '✩', '✪', '⍟', '❂', '✫', '✬', '✭', '✮', '✯', '✰', '☪', '⚝', '⛤', '⛥', '⛦', '⛧', '⍣', '⋆', '≛', '𓇼', '𓇻', '𓇽', '꙳', '⭑', '⭒', '𖤐', '𖣔', '⟡', '⟢', '⟣', '⊹', '*', '∗', '٭', '※', '⁂', '⁎', '⁑', '⁕', '⃰', '⊛', '☸', '❋', '✱', '✲', '✳', '✴', '✵', '✶', '✷', '✸', '✹', '✺', '𖡽', '𖥤', '𖥟', '𖡟', '𖤗', '✽', '⧆', '＊', '﹡', '＊', '†', '‡', '𒀭', '𒀯', '𒄬'] },
+        { name: 'Braille', characters: ['⣿', '⠿', '⠾', '⠽', '⠼', '⠻', '⠺', '⠹', '⠸', '⠷', '⠶', '⠵', '⠴', '⠳', '⠲', '⠱', '⠰', '⠯', '⠮', '⠭', '⠬', '⠫', '⠪', '⠩', '⠨', '⠧', '⠦', '⠥', '⠤', '⠣', '⠢', '⠡', '⠠', '⠟', '⠞', '⠝', '⠜', '⠛', '⠚', '⠙', '⠘', '⠗', '⠖', '⠕', '⠔', '⠓', '⠒', '⠑', '⠐', '⠏', '⠎', '⠍', '⠌', '⠋', '⠊', '⠉', '⠈', '⠇', '⠆', '⠅', '⠄', '⠃', '⠂', '⠁', '⠁', '⠀'] },
+        { name: 'Indeks-Górny', characters: ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹', '⁺', '⁻', '⁼', '⁽', '⁾', 'ⁿ', 'ᴬ', 'ᴮ', 'ᴰ', 'ᴱ', 'ᴳ', 'ᴴ', 'ᴵ', 'ᴶ', 'ᴷ', 'ᴸ', 'ᴹ', 'ᴺ', 'ᴼ', 'ᴾ', 'ᴿ', 'ˀ', 'ˁ', '˂', '˃', '˄', '˅', 'ˆ', 'ˇ', 'ˈ', 'ˉ', 'ˊ', 'ˋ', 'ˌ', 'ˍ', 'ˎ', 'ˏ', 'ː', 'ˑ', '˒', '˓', '˔', '˕', '˖', '˗'] },
+        { name: 'Indeks-Dolny', characters: ['₀', '₁', '₂', '₃', '₄', '₅', '₆', '₇', '₈', '₉', '₊', '₋', '₌', '₍', '₎', '₏', 'ₐ', 'ₑ', 'ₒ', 'ₓ', 'ₔ', 'ₕ', 'ₖ', 'ₗ', 'ₘ', 'ₙ', 'ₚ', 'ₛ', 'ₜ', '₝', '₞', '₟'] },
+        { name: 'Jednostki', characters: ['μ', '°', '℃', '℉', '㎍', '㎎', '㎏', '℥', '㏌', '㎚', '㎛', '㎜', '㎝', '㎞', '㎖', '㎗', '㎘', '㏄', '㏖', '㏒', '㎅', '㎆', '㎇', '㎈', '㎉', '㎐', '㎑', '㎒', '㎓', '㎾', 'Ω', '㏑', '㏈', '㏐', '㏂', '㏘', '㎳', '㎭', '㏅', '㎪', '㏗', '′', '″'] },
+      ];
+
+      const charactersGrid = document.getElementById('charactersGrid');
+
+      categories.forEach(category => {
+        const categoryContainer = document.createElement('div');
+        categoryContainer.classList.add('category-container');
+        categoryContainer.id = category.name;
+
+        const categoryLine = document.createElement('div');
+        categoryLine.classList.add('category-line');
+        categoryLine.textContent = `${category.name}`;
+        categoryLine.addEventListener('click', () => toggleCategory(category.name));
+        categoryContainer.appendChild(categoryLine);
+
+        charactersGrid.appendChild(categoryContainer);
+
+        category.characters.forEach(character => {
+          const container = document.createElement('div');
+          container.classList.add('character-container');
+
+          const charElement = document.createElement('div');
+          charElement.classList.add('character');
+          charElement.textContent = character;
+          charElement.addEventListener('click', () => addToClipboard(character));
+          container.appendChild(charElement);
+
+          const copyButton = document.createElement('button');
+          copyButton.classList.add('copy-button');
+          copyButton.textContent = 'Kopiuj';
+          copyButton.addEventListener('click', () => addToClipboard(character));
+          container.appendChild(copyButton);
+
+          categoryContainer.appendChild(container);
+        });
+      });
+    });
+
+    function addToClipboard(character) {
+      navigator.clipboard.writeText(character).then(() => {
+        alert(`Znak "${character}" został skopiowany do schowka.`);
+      }).catch(err => {
+        console.error('Błąd podczas kopiowania do schowka:', err);
+      });
+    }
+
+    function toggleSide() {
+      const side = document.getElementById('side');
+      const charactersGrid = document.getElementById('charactersGrid');
+
+      if (window.innerWidth <= 600) {
+        if (parseInt(window.getComputedStyle(side).left) >= 0) {
+          side.style.left = '-100%';
+          charactersGrid.style.marginLeft = '0';
+        } else {
+          side.style.left = '0';
+          charactersGrid.style.marginLeft = '0px';
+        }
+      }
+    }
+
+    function toggleCategory(categoryName) {
+      const categoryContent = document.getElementById(categoryName);
+      categoryContent.classList.toggle('expanded');
+    }
+    
+    const charactersGrid = document.getElementById('charactersGrid');
+    const scrollIndicator = document.getElementById('scrollIndicator');
+
+    
+    function updateProgressBar() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.clientHeight;
+    const scrollPercentage = (scrollPosition / (documentHeight - windowHeight)) * 100;
+    scrollIndicator.style.height = `${scrollPercentage}%`;
+}
+
+// Dodaj nasłuchiwanie na zdarzenie scroll
+window.addEventListener('scroll', updateProgressBar);
+  </script>
+  
+  <footer><center><a href="https://github.com/MidWay-Projects/copyfy/blob/main/LICENSE" target="_blank"><h2>Copyright (©) 2024 Copyfy</h2></a></center></footer>
+</body>
+</html>
