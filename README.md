@@ -13,4 +13,6 @@ Jest to strona z znakami/symbolami do skopiowania.
 Możesz tu sobie znaleźć ładny znaczek by urozmaicić swój tekst/nick/profil/bio/wiadomość.
 Jeśli na stronie coś nie działa lub widzisz jakiś błąd prosiłbym o stworzenie błędu na githubie. :D
 
-Zapraszam na https://copyfy.glitch.me lub https://midway-projects.glitch.io/copyfy
+Zapraszam na https://copyfy.glitch.me lub https://midway-projects.github.io/copyfy
+
+Btw github pages jest zepsute nie potrafi wczytać style.css dlatego styl jest w index.html na githubie
