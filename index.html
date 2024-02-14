@@ -2,11 +2,16 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="https://cdn.glitch.global/9e441e02-033e-4da3-828a-4bb469037c94/%C2%A7%20(1).png?v=1706639756232">
+  <link rel="shortcut icon" href="https://cdn.glitch.global/9e441e02-033e-4da3-828a-4bb469037c94/COPYFY!.png?v=1707938588191">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="https://copyfy.glitch.me/">
+  <meta property="og:title" content="Copyfy!">
+  <meta property="og:description" content="Znajdziesz tutaj znaki do skopiowania które możesz wykorzystać naprzykład w bio lub nicku">
+  <meta property="og:image" content="https://cdn.glitch.global/9e441e02-033e-4da3-828a-4bb469037c94/COPYFY!.png?v=1707938588191">
   <link rel="stylesheet" href="/style.css">
   <title>Copyfy</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8702408230106114" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/smooth-scroll"></script>
+
 </head>
 <body>
   <div id="header"><h1>Copyfy</h1><button id="toggleSideButton" onclick="toggleSide()">☰</button></div>
@@ -18,33 +23,31 @@
   </div>
   <div id="side">
     
-        <a href="#Combo" onclick="toggleSide()"><button><h3>Combo</h3></button></a>
-        <a href="#Linie" onclick="toggleSide()"><button><h3>Linie</h3></button></a>
-        <a href="#Strzałki" onclick="toggleSide()"><button><h3>Strzałki</h3></button></a>
-        <a href="#Kwadraty" onclick="toggleSide()"><button><h3>Kwadraty</h3></button></a>
-        <a href="#Trójkąty" onclick="toggleSide()"><button><h3>Trójkąty</h3></button></a>
-        <a href="#Koła" onclick="toggleSide()"><button><h3>Koła</h3></button></a>
-        <a href="#Drogowe" onclick="toggleSide()"><button><h3>Drogowe</h3></button></a>
-        <a href="#Odwarzanie" onclick="toggleSide()"><button><h3>Odtwarzanie</h3></button></a>
-        <a href="#Kostki" onclick="toggleSide()"><button><h3>Kostki</h3></button></a>
-        <a href="#Menu" onclick="toggleSide()"><button><h3>Menu</h3></button></a>
-        <a href="#Przedmioty" onclick="toggleSide()"><button><h3>Przedmioty</h3></button></a>
-        <a href="#Matematyczne" onclick="toggleSide()"><button><h3>Matematyczne</h3></button></a>
-        <a href="#Nawiasy" onclick="toggleSide()"><button><h3>Nawiasy</h3></button></a>
-        <a href="#Twarze" onclick="toggleSide()"><button><h3>Twarze</h3></button></a>
-        <a href="#Gwiazdy" onclick="toggleSide()"><button><h3>Gwiazdy</h3></button></a>
-        <a href="#Braille" onclick="toggleSide()"><button><h3>Braille</h3></button></a>
-        <a href="#Indeks-Górny" onclick="toggleSide()"><button><h3>Indeks Górny</h3></button></a>
+        <a href="#update" onclick="toggleSide()"><button><h3>Kaomoji</h3></button></a>
+        <a href="#Kaomoji" onclick="toggleSide()"><button><h3>Linie</h3></button></a>
+        <a href="#Linie" onclick="toggleSide()"><button><h3>Strzałki</h3></button></a>
+        <a href="#Strzałki" onclick="toggleSide()"><button><h3>Kwadraty</h3></button></a>
+        <a href="#Kwadraty" onclick="toggleSide()"><button><h3>Trójkąty</h3></button></a>
+        <a href="#Trójkąty" onclick="toggleSide()"><button><h3>Koła</h3></button></a>
+        <a href="Koła" onclick="toggleSide()"><button><h3>Drogowe</h3></button></a>
+        <a href="#Drogowe" onclick="toggleSide()"><button><h3>Odtwarzanie</h3></button></a>
+        <a href="#Odtwarzanie" onclick="toggleSide()"><button><h3>Kostki</h3></button></a>
+        <a href="#Kostki" onclick="toggleSide()"><button><h3>Menu</h3></button></a>
+        <a href="#Menu" onclick="toggleSide()"><button><h3>Przedmioty</h3></button></a>
+        <a href="#Przedmioty" onclick="toggleSide()"><button><h3>Matematyczne</h3></button></a>
+        <a href="#Matematyczne" onclick="toggleSide()"><button><h3>Nawiasy</h3></button></a>
+        <a href="#Nawiasy" onclick="toggleSide()"><button><h3>Twarze</h3></button></a>
+        <a href="#Twarze" onclick="toggleSide()"><button><h3>Gwiazdy</h3></button></a>
+        <a href="#Gwiazdy" onclick="toggleSide()"><button><h3>Braille</h3></button></a>
+        <a href="#Braille" onclick="toggleSide()"><button><h3>Indeks Górny</h3></button></a>
         <a href="#Indeks-Dolny" onclick="toggleSide()"><button><h3>Indeks Dolny</h3></button></a>
         <a href="#Jednostki" onclick="toggleSide()"><button><h3>Jednostki</h3></button></a><br><br><br><br>
-  </div>
-  
-  <center><div id="charactersGrid"></div></center>
-
+  </div><a href='#' class="stt" title="scroll to top"></a>
+  <center><div id="charactersGrid"><div id="up"><div id="update"><h3>Aktualizacja strony!</h3> <h5>Dodano: <br> - Przycisk powrotu na górę<br> - Kilka kaomoji<br>- Pole tekstowe<br>- Nową ikone strony i ogłoszenie linku<br><br>Naprawiono: <br>   - Przewijanie panelem po lewej jest teraz płynniejsze<br >- Poprawiono przewijanie poprzez panel z lewej</h5></div><textarea rows="11" width="100%" resize="horizontal"></textarea></div></div></center>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const categories = [
-        { name: 'Combo', characters: ['✎﹏﹏﹏﹏﹏','✄┈┈┈┈┈┈┈┈┈','( ͡° ͜ʖ ͡°)','¯\\_(ツ)_/¯','ヽ༼ຈل͜ຈ༽ﾉ','ಠ_ಠ','ᕕ( ᐛ )ᕗ','▶ ılıılılılılılıılılı 00:38','▶ 🔘────── 00:38','ʚїɞ','𓆝 ̃˷','[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]','ᶘᵒᴥᵒᶅ','༼ ºلº ༽','^오^','ʕ•ᴥ•ʔ',' ´• ل •`','(´_ゝ`)'] },
+        { name: 'Kaomoji', characters: ['✎﹏﹏﹏﹏﹏','✄┈┈┈┈┈┈┈┈┈','( ͡° ͜ʖ ͡°)','¯\\_(ツ)_/¯','ヽ༼ຈل͜ຈ༽ﾉ','ಠ_ಠ','ᕕ( ᐛ )ᕗ','▶ ılıılılılılılıılılı 00:38','▶ 🔘────── 00:38','ʚїɞ','𓆝 ̃˷','[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]','ᶘᵒᴥᵒᶅ','༼ ºلº ༽','^오^','ʕ•ᴥ•ʔ',' ´• ل •`','(´_ゝ`)','⩇⩇:⩇⩇','(  ≧ᗜ≦)','˗ˏˋ ★ ˎˊ˗','ㅤ/ᐠ - ˕ -マ','≽^- ˕ -^≼','/ᐠ. .ᐟ\ฅ','•⩊•','•ᴗ•','𓃠','̤̮','⌞ ⌝','/ᐠ. ｡.ᐟ\ᵐᵉᵒʷˎˊ˗','︻╦̵̵̿╤──','ಠ_ಠ','ಥ_ಥ','༼ つ ◕_◕ ༽つ','( ͡° ͜ʖ ͡°)','( ఠ ͟ʖ ఠ)','＞﹏＜','ಠ▃ಠ','(¬_¬")',''] },
         { name: 'Linie', characters: ['─', '━', '│', '┃', '┄', '┅', '┆', '┇', '┈', '┉', '┊', '┋', '═', '║', '╒', '╓', '╔', '╕', '╖', '╗', '╘', '╙', '╚', '╛', '╜', '╝', '╞', '╟', '╠', '╡', '╢', '╣', '╤', '╥', '╦', '╧', '╨', '╩', '╪', '╫', '╬', '╭', '╮', '╯', '╰', '╱', '╲', '╳', '╴', '╵', '╶', '╷', '╸', '╹', '╺', '╻', '╼', '╽', '╾', '╿'] },
         { name: 'Strzałki', characters: ['►', '◄', '↕', '↨', '↑', '↓', '→', '←', '↔', '▲', '▼', '⮕', '⬈', '⬉', '⬊', '⬋', '⬌', '⬍', '⭠', '⭡', '⭢', '⭣', '⭤', '⭥', '⮂', '⮃', '⮐', '⮑', '⬎', '⬏', '⬐', '⬑', '⬱', '⬳', '⬸', '⬿', '⭅', '⭆', '↕', '↖', '↗', '↘', '↙', '↚', '↛', '↜', '↝', '↞', '↟', '↠', '↡', '↢', '↣', '↤', '↥', '↦', '↧', '↨', '↫', '↬', '↭', '↮', '↯', '↰', '↱', '↲', '↳', '↴', '↶', '↷', '↸', '↹', '↺', '↻', '⟲', '⟳', '↼', '↽', '↾', '↿', '⇀', '⇁', '⇂', '⇃', '⇄', '⇅', '⇆', '⇇', '⇈', '⇉', '⇊', '⇋', '⇌', '⇍', '⇎', '⇏', '⇕', '⇖', '⇗', '⇘', '⇙', '⇚', '⇛', '⇜', '⇝', '⇞', '⇟', '⇠', '⇡', '⇢', '⇣', '⇤', '⇥', '⇦', '⇧', '⇨', '⇩', '⇪', '⌅', '⌆', '⌤', '⏎', '☇', '☈', '➔', '➘', '➙', '➚', '➛', '➜', '➝', '➞', '➟', '➠', '➢', '➣', '➤', '➥', '➦', '➧', '➨', '➩', '➪', '➫', '➬', '➭', '➮', '➯', '➱', '➲', '➳', '➴', '➵', '➶', '➷', '➸', '➹', '➺', '➻', '➼', '➽', '➾', '↵', '↓', '↔', '←', '→', '↑', '⍇', '⍈', '⍐', '⍗', '⇫', '⇬', '⇭', '⇮', '⇯', '⇰', '⇱', '⇲', '⇳', '⇴', '⇵', '⇶', '⇷', '⇸', '⇹', '⇺', '⇻', '⇼', '⇽', '⇾', '⇿', '⇐', '⇑', '⇒', '⇓', '⇔', '𖣫', '𖤂', '⬀', '⬁', '⬂', '⬃', '⬄'] },
         { name: 'Kwadraty', characters: ['∎', '⊞', '⊟', '⊠', '⊡', '▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '░', '▒', '▓', '▔', '■', '□', '▢', '▣', '▤', '▥', '▦', '▧', '▨', '▩', '▪', '▫', '▬', '▭', '▮', '▯', '◘', '◙', '◚', '◛', '◧', '◨', '◩', '◪', '◫', '❏', '❐', '❑', '❒', '❘', '❙', '❚', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟', '◰', '◱', '◲', '◳', '𖣯', '⿴', '⿻','█','▀','▄▌','▐','▗','▘','▙','▚','▛','▜','▝','▞','▟','▖','░','▒','▓','◼','⬛','⬜'] },
@@ -140,7 +143,7 @@
     const scrollPercentage = (scrollPosition / (documentHeight - windowHeight)) * 100;
     scrollIndicator.style.height = `${scrollPercentage}%`;
 }
-window.addEventListener('scroll', updateProgressBar);
+  window.addEventListener('scroll', updateProgressBar);
   </script>
   
   <footer><center><a href="https://github.com/MidWay-Projects/copyfy/blob/main/LICENSE" target="_blank"><h2>Copyright (©) 2024 Copyfy</h2></a></center></footer>
