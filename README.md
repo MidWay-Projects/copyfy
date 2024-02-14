@@ -1,4 +1,7 @@
+![COPYFY!](https://github.com/MidWay-Projects/copyfy/assets/100584937/c67164f1-6db5-449e-90ee-bd608a72f401)
+
 # Copyfy - Prawa autorskie
+
 Copyright 2024 Copyfy
 
 Ten program jest wolnym oprogramowaniem: możesz go rozpowszechniać dalej i/lub modyfikować zgodnie z warunkami Licencji GNU General Public License, opublikowanej przez Fundację Wolnego Oprogramowania, w wersji 3 tej Licencji lub późniejszej wersji.
