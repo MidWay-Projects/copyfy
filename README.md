@@ -17,5 +17,3 @@ Możesz tu sobie znaleźć ładny znaczek by urozmaicić swój tekst/nick/profil
 Jeśli na stronie coś nie działa lub widzisz jakiś błąd prosiłbym o stworzenie błędu na githubie. :D
 
 Zapraszam na https://copyfy.glitch.me
-
-Btw github pages jest zepsute nie potrafi wczytać style.css dlatego styl jest w index.html na githubie
