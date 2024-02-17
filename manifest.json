@@ -1,7 +1,7 @@
 {
-    "name": "Nazwa Twojej Strony",
-    "short_name": "Krótka Nazwa",
-    "description": "Opis Twojej Strony",
+    "name": "COPYFY!",
+    "short_name": "Copyfy",
+    "description": "Kopiuj znaki dekoracyjne i wklejaj je do bio/nick'ów",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
