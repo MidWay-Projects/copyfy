@@ -218,6 +218,8 @@ header {
 footer {
   background-color: #121212;
   width: 100%;
+  bottom: 0px;
+  position: 
 }
 a{
   color: #ffffff;
