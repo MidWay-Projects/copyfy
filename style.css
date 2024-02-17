@@ -280,7 +280,7 @@ textarea {
   font-size: 30px;
   margin:20px;
 }
-@media (max-width: 800px){
+@media (max-width: 1070px){
   textarea{
     display: none;
     margin: 10px;
