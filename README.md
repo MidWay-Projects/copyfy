@@ -20,4 +20,4 @@ Zapraszam na https://copyfy.midway.ovh <<<<<<<
 
 # Reklama strony
 Rozsyłaj ją innym ale pamiętaj że nie każdy lubi reklamy możesz udostępnić na swoim profilu.
-<div align="center"><img src="ad-copyfy"></div>
+<div align="center"><img src="ad-copyfy.png"></div>
