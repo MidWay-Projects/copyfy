@@ -129,6 +129,7 @@ header {
   border: 5px solid #7d63ff;
   border-radius: 20px;
   transition-duration: 1s;
+  transition-timing-duration: ease;
   width:90%;
 }
 #side button:hover{
