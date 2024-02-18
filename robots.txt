@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /webhook.html
+
+User-agent: *
+Allow: /
+
+Sitemap: https://copyfy.midway.ovh/sitemap.xml
