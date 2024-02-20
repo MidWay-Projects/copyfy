@@ -47,7 +47,7 @@ header {
 }
 
 .character-container {
-  display: inline-block;
+  display: inline;
   flex-direction: column;
   align-items: center;
   border: 3px #540AAD solid;
